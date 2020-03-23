@@ -27,6 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+.App-map .leaflet-container{
+  height: 100vh;
+}
 
 @keyframes App-logo-spin {
   from {

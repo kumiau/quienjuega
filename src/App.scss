@@ -1,0 +1,57 @@
+$font-family-cursive:  'Cookie', cursive;
+$font-family-sans-serif:  'Raleway', sans-serif;
+
+.App {
+  text-align: center;
+  position: relative;
+  font-family: $font-family-sans-serif;
+}
+
+/* Mixes */
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.floatingCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Blocks */
+
+.Landing {
+  &-title {
+    position: absolute;
+    top: -160px;
+    font-family: $font-family-cursive;
+    font-size: 140pt;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-cta {
+    margin: 0 20px;
+  }
+}
+.CreateTable {
+  top: 10%;
+}
+
+.Map {
+  position: relative;
+  z-index: 1;
+  .leaflet-container{
+    height: 100vh;
+  }
+}
+
